@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+   
+    width: 100%;
+   
+}
+
+#navbar1{
+    height:max-content;
+}
+.navbar1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 42px;
+    background-color: lightblue;
+}
+.navbar1 b{
+    padding: 0px 10px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+
+}
+.navbar1 b:hover{
+    color: white;
+     background-color: black;
+}
+
+
+@media screen and (max-width:720px) {
+    .navbar1{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+       }
+       .navbar1 b{
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+       }
+      
+       .navbar1 b:hover{
+        border-bottom: 2px solid black;
+       
+    }
+}  
+
+#homeSection{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,0.4)) , url(https://png.pngtree.com/thumb_back/fh260/background/20230707/pngtree-3d-rendered-interface-for-a-homemade-food-app-image_3817940.jpg) ;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+#homeSection .contentDiv{
+        width: 100%;
+        height: 100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        
+} 
+.contentDiv h1{
+    padding: 10px;
+    text-align: center;
+    font-size:40px;
+}
+.contentDiv p{
+    padding: 10px;
+    text-align: center;
+    font-size: 18px
+}
+.contentDiv p b{
+    font-size: 30px;
+    color:darkred;
+    text-shadow: 2px 2px 4px white;
+    
+    
+}
+.inputField{
+    width: 100%;
+ text-align:center ;
+}
+input{
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+
+.resturantContainer{
+     width: 90%;
+     margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#SearchRestuarants h2{
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.resturantContainer .resturantCard{
+
+    border: 2px solid black;
+    width: calc(33.33% - 60px - 4px);
+    height: 360px;
+   margin: 25px;
+  
+    
+}
+
+
+.Rating{
+    color: green;
+}
+
+.resturantImage{
+    width: 100%;
+    height: 60%;
+}
+.resturantButton{
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.resturantCardContentDiv{
+     padding:5px;
+}
+.imgMain{
+    width: 100px;
+}
+
+.resturantButton:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width : 200px) and (max-width : 576px) {
+
+    .resturantContainer .resturantCard{
+        border: 2px solid black;
+        width: calc(100% - 50px - 4px);
+        height: fit-content;
+        margin: 25px;   
+    }     
+}
+
+@media screen and (min-width : 576px) and (max-width : 1020px) {
+
+    .resturantContainer .resturantCard{
+        border: 2px solid black;
+        width: calc(50% - 50px - 4px);
+        height: 400px;
+        margin: 25px;   
+    }     
+}
+
+@media screen and (min-width : 1020px) and (max-width : 1400px) {
+
+    .resturantContainer  .resturantCard{
+        border: 2px solid black;
+        width: calc(33.33% - 60px - 4px);
+        height: 380px;
+        margin: 25px;   
+    }     
+}
+
+
+#dishes {
+  
+    background-color: #f8f9fa;
+}
+
+#dishes h2 {
+    text-align: center;
+    padding: 15px; 
+}
+.dishesContainer {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-gap: 50px;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.dishCard {
+    border: 2px solid black; 
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 180px; 
+}
+.dishImage {
+    width: 100%; 
+    height: 60%; 
+}
+
+.price {
+    margin-top: 10px; 
+}
+
+
+@media screen and (max-width: 576px) {
+    .dishCard {
+        height: fit-content; 
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1020px) {
+    .dishCard {
+        height:200px; 
+    }
+}
+
+
+#footerSection{
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+
+}
+
+.footerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+@media screen and (max-width : 400px) {
+    .footerContainer{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;   
+        
+    }
+
+    .footerContainer div{
+        padding:10px
+    }
+    
+    
+}
+
